@@ -1,0 +1,48 @@
+meta tags give info about page.give info to search engines so they see info is there in your search engines without reading the body.
+charset is which character set you are using.it is set of charcters used to write a particular document like ascii codes.
+like some char are valid in ascii and some not.
+
+viewport is window inside which browser is open
+i.e width of page in any device should be same as in browser
+and ratio = 1 and it is not going to zoom
+so you do not need to scroll if this is set.
+
+global attributes inside every html as start or type
+check on mdn
+ 
+
+
+use console to run js live on your page.
+This is called REPL.
+R = read
+E = evaluate by interpreter
+P = print
+L = loop... REP works in loop
+
+console is a REPL.
+
+
+//innertext and innerHTML
+
+para.innerHTML
+"HELLO"
+
+para.innerText
+"HELLO"
+
+para.innerHTML += " <b>WORLD</b>"
+"HELLO <b>WORLD</b>"
+
+para.innerHTML
+"HELLO <b>WORLD</b>"
+
+para.innerText
+"HELLO WORLD"
+
+this makes change in text on page and not in html so it willnot make italics but print all things.
+​para.innerText += "<i>!!!</i>"  
+"HELLO WORLD<i>!!!</i>"
+
+​use onclick = function(){}
+
+new Date().getTime()....it is time in miliseconds from jan 1,1970.it is UTC ie GMT. to calculate time taken by our work to run..

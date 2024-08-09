@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20pt;    
+        }
+    </style>
+    <!-- <script>....can write this way in head section
+        window.onload = function(){   this will take time to run fn and thus the body part is read
+   
+        let nameBox = document.getElementById('name');
+    
+    
+        let greetBtn =  document.getElementById('btn');
+ 
+        greetBtn.onclick = function() {
+            
+            let name = nameBox.value
+         
+            window.alert("Hello " + name)
+        }
+        }
+    
+     </script> -->
+    
+ </head>
+ <body>
+
+    <input id = "name">
+    <button id = "btn">
+        Greet
+    </button>
+    <br>
+    Hello World
+    <script>
+        
+    // this is a fn in document object and document refers to this page 
+        let nameBox = document.getElementById('name');
+    
+    // this will give reference of button id above
+        let greetBtn =  document.getElementById('btn');
+        // to run smthing when btn is clicked
+        greetBtn.onclick = function() {
+            //  anything added in input box is the value and stored in name.
+            let name = nameBox.value
+            // window refers to the browser
+            window.alert("Hello " + name)
+        }
+        
+    
+     </script>
+    
+ </body> 
+ </html>

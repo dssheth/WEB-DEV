@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id = "todo">
+    <button id = "btn">
+        ADD
+    </button>
+    <br>
+    <ul id = "list">
+        <li>Task one</li>
+    </ul>
+    <p id = "para">HELLO</p>
+    <script>
+        let todoBox = document.getElementById('todo');
+        let addBtn =  document.getElementById('btn');
+        let todolist = document.getElementById('list')
+        
+        addBtn.onclick = function() {
+            let todo = todoBox.value
+            //it refreshes whole list.
+            // todolist.innerHTML += '<li>' + todo + '  </li>'  
+         
+            //this adds only the new data and do not refresh the existing data
+            let newtaskitemlist = document.createElement('li') //this will make <li></li> simply
+            newtaskitemlist.innerText = todo;
+            todolist.appendChild(newtaskitemlist)
+            
+        }
+    </script>
+</body>
+</html>     
